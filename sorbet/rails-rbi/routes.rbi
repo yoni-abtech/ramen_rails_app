@@ -21,6 +21,41 @@ module GeneratedUrlHelpers
   sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
   def welcome_index_url(*args, **kwargs); end
 
+  # Sigs for route /ramens(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def ramens_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def ramens_url(*args, **kwargs); end
+
+  # Sigs for route /ramens/new(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_ramen_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def new_ramen_url(*args, **kwargs); end
+
+  # Sigs for route /ramens/:id/edit(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_ramen_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def edit_ramen_url(*args, **kwargs); end
+
+  # Sigs for route /ramens/:id(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def ramen_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def ramen_url(*args, **kwargs); end
+
+  # Sigs for route /
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def root_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def root_url(*args, **kwargs); end
+
   # Sigs for route /rails/action_mailbox/postmark/inbound_emails(.:format)
   sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
   def rails_postmark_inbound_emails_path(*args, **kwargs); end
