@@ -1,0 +1,17 @@
+<h1>New Ramen</h1>
+
+<%= form_with scope: :ramen, url: ramens_path, local: true do |form| %>
+  <p>
+    <%= form.label :brand %><br>
+    <%= form.text_field :brand %>
+  </p>
+ 
+  <p>
+    <%= form.label :review %><br>
+    <%= form.text_area :review %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -14,6 +14,13 @@ class ActionMailer::Base
 end
 
 module GeneratedUrlHelpers
+  # Sigs for route /welcome/index(.:format)
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def welcome_index_path(*args, **kwargs); end
+
+  sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
+  def welcome_index_url(*args, **kwargs); end
+
   # Sigs for route /rails/action_mailbox/postmark/inbound_emails(.:format)
   sig { params(args: T.untyped, kwargs: T.untyped).returns(String) }
   def rails_postmark_inbound_emails_path(*args, **kwargs); end

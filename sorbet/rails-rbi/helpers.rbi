@@ -6,7 +6,12 @@ module ApplicationHelper
   include ActionView::Helpers
 end
 
+module WelcomeHelper
+  include Kernel
+  include ActionView::Helpers
+end
+
 module ActionController::Helpers
-  sig { returns(T.all(ApplicationHelper)) }
+  sig { returns(T.all(ApplicationHelper, WelcomeHelper)) }
   def helpers; end
 end
